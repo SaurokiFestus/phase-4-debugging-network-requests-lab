@@ -27,7 +27,7 @@ function ToyForm({ onAddToy }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newToy),
-    })
+    },[])
       .then((r) => r.json())
       .then((newToy) => {
         setFormData({
